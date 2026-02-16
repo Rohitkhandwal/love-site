@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My MussU ❤️</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    text-align:center;
+    color:white;
+}
+.container{
+    z-index:2;
+}
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    color:#ff4b5c;
+    font-size:18px;
+    cursor:pointer;
+}
+.heart{
+    position:absolute;
+    color:white;
+    font-size:20px;
+    animation:float 6s linear infinite;
+}
+@keyframes float{
+    0%{transform:translateY(100vh);}
+    100%{transform:translateY(-10vh);}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hey Mussu ❤️</h1>
+    <p>I made something for you...</p>
+    <button onclick="location.href='ishu1.html'">Tap Here 💕</button>
+</div>
+
+<script>
+for(let i=0;i<30;i++){
+    let heart=document.createElement("div");
+    heart.className="heart";
+    heart.innerHTML="❤️";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(Math.random()*20+10)+"px";
+    heart.style.animationDuration=(Math.random()*5+5)+"s";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
